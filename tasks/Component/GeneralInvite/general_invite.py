@@ -550,7 +550,7 @@ class GeneralInvite(BaseTask, GeneralInviteAssets):
             self.screenshot()
             if not self.appear(self.I_GI_SURE):
                 break
-            if self.appear_then_click(self.I_GI_SURE, interval=1):
+            if self.appear_then_click(self.I_GI_SURE, interval=3):
                 continue
 
         return True
@@ -573,7 +573,7 @@ class GeneralInvite(BaseTask, GeneralInviteAssets):
                 return False
             if self.appear_then_click(self.I_I_NO_DEFAULT, interval=1):
                 continue
-            if self.appear_then_click(self.I_GI_SURE, interval=1):
+            if self.appear_then_click(self.I_GI_SURE, interval=3):
                 continue
             if self.appear_then_click(self.I_I_ACCEPT_DEFAULT, interval=1):
                 continue
